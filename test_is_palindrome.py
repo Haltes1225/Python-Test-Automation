@@ -80,7 +80,7 @@ def test_even_length_string_is_palindrome():
     assert is_palindrome_result == True, f"Expected True, got {is_palindrome_result}"
 
 def test_uneven_length_string_is_palindrome():
-    string = "nsbnrPDPevjh2kC224><<?'{e{}ee}||\pol||e==-23+fvfeeevllababababa"*2
+    string = "nsbnrPDPevjh2kC224><<?'{e{}ee}||_pol||e==-23+fvfeeevllababababa"*2
     string = string + "ć" + string[::-1]
     is_palindrome_result = is_palindrome(string)
     assert is_palindrome_result == True, f"Expected True, got {is_palindrome_result}"
